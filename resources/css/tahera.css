@@ -1,0 +1,481 @@
+/*-------------- color: #ff0000 red-----------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+  color: #555;
+  font-family: "Lato", Arial, sans-serif;
+  font-weight: 300px;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+.row {
+  max-width: 1140px;
+
+  /*margin: 0 auto 0 auto;  top right bottom left */
+  margin: 0 auto; /*top-bottom, right-left*/
+  /*
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;   ==> margin:0;
+
+    */
+}
+
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)),
+    url(img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 240%; /*Relative of base font size: 20*2.4 = 48.0 */
+  font-weight: 300;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  
+}
+
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 40px;
+  
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+
+.main-nav li a {
+  padding: 8px, 0;
+  color: #5d20ea;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 90%; /* 20 * 0.9 = 18.0*/
+  text-decoration: none;
+
+  transition: border-bottom 2s;
+}
+.main-nav li a:hover {
+  border-bottom: rgb(116, 29, 29) solid 5px; /* transparent */
+}
+
+/*----------------- beautify button link ---------------------*/
+.btn {
+  display: inline-block;
+  padding: 10px 30px; /* top right bottom left*/
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+}
+
+.btn-bappa {
+  color: #fff;
+  border: 1px solid #ea2027;
+  background-color: #ea2027;
+  margin-right: 15px;
+}
+
+.btn-bhoot {
+  border: 1px solid #ea2027;
+  color: #ea2027;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #901217;
+  color: #fff;
+}
+
+/*--------section feature----------------------------------------*/
+section{
+
+  padding: 85px 0;/* top-bottom left-right*/
+}
+.get-details{
+ /* background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(img/healthy-food.jpg);*/
+ background-color: rgb(238, 238, 149);
+}
+
+h2{
+  font-size: 185%;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.get-text {
+  line-height: 145%;
+  width: 70%;
+  margin: 0 15%;
+  margin-bottom: 30px;
+}
+h3{
+  font-weight: 300;
+  font-size: 110%;
+  text-transform: uppercase;
+  margin-bottom: 11px;
+}
+p{
+  font-size: 90%;
+  
+  line-height: 145%;
+  text-align: justify;
+}
+ion-icon{
+  color: #901217;
+  font-size: 350%;
+  margin:  40px 0;
+  
+}
+
+
+/*---------------------------------food image section-----------------------------*/
+
+
+.section-food{
+  padding: 0;
+}
+.food-img{
+  list-style: none;
+  width: 100%;
+}
+.food-img li {
+  width: 25%;
+  float: left;
+}
+
+.menu{
+  width: 100%;
+   margin: 0;
+   overflow: hidden;/* it use to control the over flow of image*/
+   background-color: rgba(0, 0, 0, 0.836);
+}
+.menu img{
+  opacity: 0.7;/* it use to image blar/strach/zoom-out*/
+  width: 100%;
+  height: auto;
+  transform: scale(1.4);/* image space cut btween two image*/
+  transition: transform 0.5s,  opacity 0.5s;
+}
+
+.menu img:hover {
+  transform: scale(1.04);
+  opacity: 1;
+}
+
+/*-----------------------------------------------------------*/
+/*---------------sction step--------------------------------*/
+/*-----------------------------------------------------------*/
+
+.section-steps {
+  background-color: blanchedalmond;
+}
+
+.step-box:first-child{
+  text-align: right;
+  padding-right: 4%;
+  margin-top: 30px;
+}
+
+.step-box:last-child{
+  padding-left: 4%;
+  margin-top: 70px;
+}
+
+.app-screen{
+  width: 40%;
+  
+}
+
+.works-step{
+  margin-bottom: 50px;
+}
+
+.works-step div{
+  color: #ea2027;
+  border: 2px solid #ea2027;
+  display: inline-block;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  float: left;
+  padding: 10px;
+  margin-right: 25px;  
+}
+
+.app-btn img{
+  width: 30%;
+}
+
+.step-box img{
+  margin-left: 20px;
+}
+
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+
+/*-------------------------------section cities----------------------------*/
+.section-cities{
+ /* background-color: rgb(229, 149, 229);*/
+ background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url(img/ind1.jpg);
+}
+.box img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.city-feature ion-icon{
+  color: #901217;
+  font-size: 120%;
+  margin-right: 5px;
+  vertical-align: middle;
+  margin-top: 1px;
+}
+
+.city-feature{
+  margin-bottom: 5px;
+}
+
+.box a:link,
+.box a:visited{
+  color: blue;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+.box a:hover{
+  color: #ea2027;
+  border-bottom: 1px solid transparent;
+}
+/*--------------------------------------------------------------------------*/
+/*------------------customer terstimonials-----------------------------------*/
+/*--------------------------------------------------------------------------*/
+
+.customer-testimonials{
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0)),url(Hummus-Reacipe.jpg);
+  background-size: cover;
+  color: #fff;
+}
+
+cite img{
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+cite{
+  font-size: 90%;
+  display: block;
+  margin-top: 25px;
+}
+
+blockquote{
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  margin-top: 40px;
+  position: relative;
+}
+
+blockquote ::before{
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+
+/*--------------------------------------section meals---------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
+.meals-plan{
+  background-color: #b1f0a4;
+
+}
+.plan-box{
+  background-color: rgb(198, 198, 218);
+  border-radius: 30px;
+  width: 90%;margin-left: 5%;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.plan-box div{
+  padding: 15px;
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom: 10px;
+}
+
+.subs-price{
+  font-size: 280%;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.subs-price span{
+  font-size: 30%;
+  font-weight: 300px;
+
+}
+
+.subs-price-meal{
+  font-size: 80%;
+}
+.plan-box ul{
+  list-style: none;
+}
+.plan-box ul li{
+  padding: 5px 0;
+}
+
+.plan-box ul li ion-icon{
+  font-size:30px;
+  margin-right: 10px;
+  color: chocolate;
+  vertical-align: middle;
+}
+
+.plan-box :first-child{
+  background-color: rgb(241, 158, 158);
+  border-bottom-left-radius:50px;
+  border-top-right-radius: 50px;
+
+}
+
+.plan-box div :last-child{
+  text-align: center;
+  border: 0;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------Forms-----------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------*/
+.form{
+  background-color: black;
+}
+.content-form{
+  width: 50%;
+  margin: 0 auto;
+
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea{
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid#ccc;
+}
+
+textarea{
+  height: 100px;
+}
+
+input[type="checkbox"]{
+  margin:10px 5px 10px 0;
+}
+
+*:focus{
+  outline: none;
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------Footer-------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------*/
+
+footer ion-icon{
+  color: #555;
+  font-size: 190%;
+}
+
+footer{
+  background-color:rgb(208, 205, 224);
+  padding: 50px; 
+}
+
+.footer-nav{
+  margin-bottom: 30px;
+  list-style: none;
+  float: left;
+  margin-top: 10px;
+}
+
+.social-links{
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+  text-decoration: none;
+  border: none;
+  color: rgb(241, 109, 21);
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active,
+.social-links li a ion-icon:hover,
+.social-links li a ion-icon:active{
+  color: aliceblue;
+  transition: color 0.02s;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+  margin-right: 0;
+}
